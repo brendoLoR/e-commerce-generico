@@ -24,74 +24,73 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="index.html">CalcShop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#!">All Calcs</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Popular Calc</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
-                <form class="d-flex">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
-                </form>
+
             </div>
         </div>
     </nav>
-    <h3 class="display-6 fw-bolder">Calculadora Online</h3>
-    <form name="calcform" method="post" class="calc-form" action="">
-        <fieldset class="calc-fieldset">
-            <legend>Calculadora</legend>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="gx-4 gx-lg-5 justify-content-center">
+                <h3 class="display-6 fw-bolder">Calculadora Online</h3>
+                <form name="calcform" method="post" class="calc-form" action="">
+                    <fieldset class="calc-fieldset">
+                        <legend>Calculadora</legend>
 
-            <input type="text" class="visor" name="visor" id="visor">
+                        <input type="text" class="visor" name="visor" id="visor">
 
-            <table id="calc">
-                <tbody>
-                    <tr>
-                        <td><button type="button" onclick="incrementaNumero(9)">9</button></td>
-                        <td><button type="button" onclick="incrementaNumero(8)">8</button></td>
-                        <td><button type="button" onclick="incrementaNumero(7)">7</button></td>
-                        <td><button type="button" onclick="operadorTraid('somar')">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button type="button" onclick="incrementaNumero(6)">6</button></td>
-                        <td><button type="button" onclick="incrementaNumero(5)">5</button></td>
-                        <td><button type="button" onclick="incrementaNumero(4)">4</button></td>
-                        <td><button type="button" onclick="operadorTraid('subtrair')">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button type="button" onclick="incrementaNumero(3)">3</button></td>
-                        <td><button type="button" onclick="incrementaNumero(2)">2</button></td>
-                        <td><button type="button" onclick="incrementaNumero(1)">1</button></td>
-                        <td><button type="button" onclick="operadorTraid('multiplicar')">x</button></td>
-                    </tr>
-                    <tr>
-                        <td><button type="button" onclick="incrementaNumero(0)">0</button></td>
-                        <td><button type="button" onclick="operadorTraid('resultado')">=</button></td>
-                        <td><button type="button" onclick="calcLimpar()">AC</button></td>
-                        <td><button type="button" onclick="operadorTraid('dividir')">/</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </fieldset>
-    </form>
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+                        <table id="calc">
+                            <tbody>
+                                <tr>
+                                    <td><button type="button" onclick="incrementaNumero(9)">9</button></td>
+                                    <td><button type="button" onclick="incrementaNumero(8)">8</button></td>
+                                    <td><button type="button" onclick="incrementaNumero(7)">7</button></td>
+                                    <td><button type="button" onclick="operadorTraid('somar')">+</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" onclick="incrementaNumero(6)">6</button></td>
+                                    <td><button type="button" onclick="incrementaNumero(5)">5</button></td>
+                                    <td><button type="button" onclick="incrementaNumero(4)">4</button></td>
+                                    <td><button type="button" onclick="operadorTraid('subtrair')">-</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" onclick="incrementaNumero(3)">3</button></td>
+                                    <td><button type="button" onclick="incrementaNumero(2)">2</button></td>
+                                    <td><button type="button" onclick="incrementaNumero(1)">1</button></td>
+                                    <td><button type="button" onclick="operadorTraid('multiplicar')">x</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" onclick="incrementaNumero(0)">0</button></td>
+                                    <td><button type="button" onclick="operadorTraid('resultado')">=</button></td>
+                                    <td><button type="button" onclick="calcLimpar()">AC</button></td>
+                                    <td><button type="button" onclick="operadorTraid('dividir')">/</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; CAlcShop 2022 - Desenvolvido por: <a
+                href="https://github.com/brendoLoR">&lt; BrendoLoR &sol;&gt; <a></p>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 
 </html>
